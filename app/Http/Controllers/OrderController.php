@@ -94,7 +94,7 @@ class OrderController extends Controller
 
         if($orders->exists())
         {
-            $orders->delete($data);
+            $orders->delete();
             return response()->json([
                 'success' => true,
                 'message' => 'Delete data success',

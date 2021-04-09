@@ -94,7 +94,7 @@ class ProductController extends Controller
 
         if($product->exists())
         {
-            $product->delete($data);
+            $product->delete();
             return response()->json([
                 'success' => true,
                 'message' => 'Delete data success',

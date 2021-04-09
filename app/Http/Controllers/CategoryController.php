@@ -96,7 +96,7 @@ class CategoryController extends Controller
 
         if($categories->exists())
         {
-            $categories->delete($data);
+            $categories->delete();
             return response()->json([
                 'success' => true,
                 'message' => 'Delete data success',

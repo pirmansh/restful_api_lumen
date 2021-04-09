@@ -94,7 +94,7 @@ class SupplierController extends Controller
 
         if($supplier->exists())
         {
-            $supplier->delete($data);
+            $supplier->delete();
             return response()->json([
                 'success' => true,
                 'message' => 'Delete data success',

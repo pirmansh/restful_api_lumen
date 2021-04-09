@@ -94,7 +94,7 @@ class EmployeeController extends Controller
 
         if($employee->exists())
         {
-            $employee->delete($data);
+            $employee->delete();
             return response()->json([
                 'success' => true,
                 'message' => 'Delete data success',
