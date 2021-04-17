@@ -38,5 +38,5 @@ php -S localhost:8000 -t public
 
 ```
 
-Access the website via `http://localhost:8000/api/{endpointName}`.
+Access the website via `http://localhost:8000/api/v1/{endpointName}`.
 
