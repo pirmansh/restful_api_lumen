@@ -5,9 +5,38 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
 [![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+### API Methods
+List of basic routes:
 
-## Official Documentation
+- employees
+- products
+- categories
+- suppliers
+- orders
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+List of routes:
+
+| Route           | HTTP    | Descriptions                    |
+| :-------------  | :------ | :------------------------------ |
+| `/api/v1/employees`    | GET     | Get all the users               |
+| `/api/v1/employees/:id`    | GET     | Get single user              |
+| `/api/v1/employees`    | POST  | Create new user              |
+| `/api/v1/employees/:id`    | PUT  | Update data user              |
+| `/api/v1/employees/:id`    | DELETE  | Remove user              |
+
+List of paging routes:
+
+| Route | HTTP     | Descriptions |
+| :------------- | :------------- |:------------- |
+| `/api/v1/employees?page="{page}"`| GET | Get employees with paging |
+
+---
+### Usage
+With only run:
+```
+php -S localhost:8000 -t public
+
+```
+
+Access the website via `http://localhost:8000/api/{endpointName}`.
 

@@ -14,7 +14,7 @@
 */
 
 
-$router->get('/', function () use ($router) {
+$router->get('/ss', function () use ($router) {
     return $router->app->version();
 });
 

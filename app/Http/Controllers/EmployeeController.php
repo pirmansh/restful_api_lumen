@@ -24,7 +24,6 @@ class EmployeeController extends Controller
             'totalPage' => ceil($count / $pageSize),
             'direction' => $asc == 'true' ? 'ASC' : 'DESC'
         ]);
-
     }
 
     function getById(Request $request, $id)
